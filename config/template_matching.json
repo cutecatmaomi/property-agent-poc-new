@@ -1,0 +1,18 @@
+{
+  "recall_groups": 12,
+  "threshold": 0.95,
+  "margin": 1.0,
+  "calibration_hash": "07858a539910ed18a1b17f69d05bee1fd1496ef3e5b279a3e0dde61b429e399f",
+  "calibration_model": "deepseek-flash",
+  "calibration_revision": "source-priority-v6",
+  "by_service": {
+    "property_service": {
+      "threshold": 0.9,
+      "margin": 1.0
+    },
+    "renovation": {
+      "threshold": 0.95,
+      "margin": 1.0
+    }
+  }
+}

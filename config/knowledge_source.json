@@ -1,0 +1,15 @@
+{
+  "active_set": "GOLDEN_QUESTIONS_100",
+  "question_set_id": "GOLDEN_QUESTIONS_100",
+  "legacy_fallback": false,
+  "manifest_sha256": "503928f5ba757f6875d2f0c454b4820f6ec84210f496ff7fea06a0ab74f0f78e",
+  "golden_questions": {
+    "path": "data/knowledge_sets/GOLDEN_QUESTIONS_100/GoldenQuestions_100问答.json",
+    "sha256": "bc4bc0f3d1ea41ff195be58fe66df95c56458cbe191dacf709ec5ec9dc15cbfe"
+  },
+  "upstream_config": {
+    "active_set": "ONTOLOGY_PACKAGE_POC",
+    "legacy_fallback": false,
+    "manifest_sha256": "0f026d032102b6557baa6a64a6a1cbad7ab34e3d908340add3705e4d2bad8d4d"
+  }
+}

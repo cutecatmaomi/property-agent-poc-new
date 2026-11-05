@@ -1,0 +1,11 @@
+{
+  "mode": "local",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "api_key": "",
+  "timeout_seconds": 20,
+  "max_tokens": 1800,
+  "strict_tools": false,
+  "thinking_disabled": true,
+  "inline_replies": true
+}

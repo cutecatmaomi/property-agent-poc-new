@@ -1,0 +1,8 @@
+{
+  "recall_groups": 12,
+  "threshold": null,
+  "margin": null,
+  "calibration_hash": null,
+  "calibration_model": null,
+  "calibration_revision": null
+}

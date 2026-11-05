@@ -1,0 +1,9 @@
+estates:
+  E001:
+    name: 烟台港城华府
+    raw_directory: estate_a
+    name_aliases: [烟台港城华府, 港城华府]
+  E002:
+    name: 青岛国际健康生态谷
+    raw_directory: estate_b
+    name_aliases: [国际健康生态谷, 国际生态谷, 西海岸健康生态谷]
