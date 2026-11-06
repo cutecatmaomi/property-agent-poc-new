@@ -1,0 +1,83 @@
+{
+  "prepare_work_order_request": {
+    "additionalProperties": false,
+    "properties": {
+      "unit_id": {
+        "maxLength": 160,
+        "minLength": 8,
+        "title": "Unit Id",
+        "type": "string"
+      },
+      "service_code": {
+        "const": "maintenance",
+        "default": "maintenance",
+        "title": "Service Code",
+        "type": "string"
+      },
+      "description": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "title": "Description",
+        "type": "string"
+      },
+      "idempotency_key": {
+        "maxLength": 128,
+        "minLength": 16,
+        "pattern": "^[A-Za-z0-9:_-]+$",
+        "title": "Idempotency Key",
+        "type": "string"
+      }
+    },
+    "required": [
+      "unit_id",
+      "description",
+      "idempotency_key"
+    ],
+    "title": "RepairDraft",
+    "type": "object"
+  },
+  "create_work_order_request": {
+    "additionalProperties": false,
+    "properties": {
+      "unit_id": {
+        "maxLength": 160,
+        "minLength": 8,
+        "title": "Unit Id",
+        "type": "string"
+      },
+      "service_code": {
+        "const": "maintenance",
+        "default": "maintenance",
+        "title": "Service Code",
+        "type": "string"
+      },
+      "description": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "title": "Description",
+        "type": "string"
+      },
+      "idempotency_key": {
+        "maxLength": 128,
+        "minLength": 16,
+        "pattern": "^[A-Za-z0-9:_-]+$",
+        "title": "Idempotency Key",
+        "type": "string"
+      },
+      "confirmation_ref": {
+        "maxLength": 160,
+        "minLength": 24,
+        "title": "Confirmation Ref",
+        "type": "string"
+      }
+    },
+    "required": [
+      "unit_id",
+      "description",
+      "idempotency_key",
+      "confirmation_ref"
+    ],
+    "title": "CreateRequest",
+    "type": "object"
+  }
+}

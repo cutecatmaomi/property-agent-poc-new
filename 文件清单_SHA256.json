@@ -1,0 +1,715 @@
+{
+  "knowledge_set": "GOLDEN_QUESTIONS_100",
+  "files": [
+    {
+      "path": "01_原系统代码/README.md",
+      "sha256": "3a41b9877a13b4b244262d256b6eb5e34cd2020e65e583c4d9a2963b635016c3",
+      "bytes": 3125
+    },
+    {
+      "path": "01_原系统代码/compose.yaml",
+      "sha256": "90350c1c7de7e16fe4215c4f79ceed6466f9969cc46ee69648c96f5dd4725630",
+      "bytes": 822
+    },
+    {
+      "path": "01_原系统代码/config/estates.yaml",
+      "sha256": "0603ab39cdaca9aa5982201e4b32008edf593699dcf72245a30a011ef5ce2518",
+      "bytes": 286
+    },
+    {
+      "path": "01_原系统代码/config/knowledge_source.json",
+      "sha256": "8701b201a7e8b2e96e8736e2d79746f6d705207f58127941a884918d40af8abe",
+      "bytes": 592
+    },
+    {
+      "path": "01_原系统代码/config/llm.example.json",
+      "sha256": "eff039c2042d0b63e579622b99d3e3ab05798ef08eb135f10a618df525f6d3a4",
+      "bytes": 237
+    },
+    {
+      "path": "01_原系统代码/config/template_matching.example.json",
+      "sha256": "23fd0eed3f8f40a0b7cace1935da6bb982b44c003cce25a303c7e5c48ba4caa1",
+      "bytes": 154
+    },
+    {
+      "path": "01_原系统代码/config/template_matching.json",
+      "sha256": "75e8c2ba45ab877603395fd7f64f100c712d31885e322717fc282603b5ec04d0",
+      "bytes": 414
+    },
+    {
+      "path": "01_原系统代码/data/knowledge_sets/GOLDEN_QUESTIONS_100/GoldenQuestions.xlsx",
+      "sha256": "00275e3190e7053d36e2dd30f951b35fbf141bbc41f7fbf9e3da4a90e9b7fa18",
+      "bytes": 63974
+    },
+    {
+      "path": "01_原系统代码/data/knowledge_sets/GOLDEN_QUESTIONS_100/GoldenQuestions_100问答.json",
+      "sha256": "bc4bc0f3d1ea41ff195be58fe66df95c56458cbe191dacf709ec5ec9dc15cbfe",
+      "bytes": 461807
+    },
+    {
+      "path": "01_原系统代码/data/knowledge_sets/ONTOLOGY_PACKAGE_POC/E001.graph.json",
+      "sha256": "bd7970d016e6440b480a7cab67fbf438142fd9bac56cfc2998e88749939bac80",
+      "bytes": 469034
+    },
+    {
+      "path": "01_原系统代码/data/knowledge_sets/ONTOLOGY_PACKAGE_POC/E002.graph.json",
+      "sha256": "9e7f958ef52e3055d86154e17da6c6e9a5cf4311952b8071990390f1652d2e79",
+      "bytes": 573344
+    },
+    {
+      "path": "01_原系统代码/data/knowledge_sets/ONTOLOGY_PACKAGE_POC/manifest.json",
+      "sha256": "0f026d032102b6557baa6a64a6a1cbad7ab34e3d908340add3705e4d2bad8d4d",
+      "bytes": 9003
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_a/烟台港城华府业主手册.pdf",
+      "sha256": "980761ed6d2c349441e70ac0fec25291aa6591c2ae5dac6c24de29d99bd36013",
+      "bytes": 1250354
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_a/烟台港城华府交付答客问.docx",
+      "sha256": "b0edc86e80ebb92493c88fec420e41ea5cef33fb25067f8a79f86bfd833f1bb4",
+      "bytes": 103979
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_a/烟台港城华府装修手册.pdf",
+      "sha256": "b1ac41a8047bed26665457c7ae872b7184a6e66bbbdec85fdbdef9791d86bf17",
+      "bytes": 1342895
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_a/烟台港城华府销售说辞.docx",
+      "sha256": "59918cd1a3f870f173808e55131e8a0f428b2ce289192af1a168d2c9043a7c6c",
+      "bytes": 33614
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_b/国际健康生态谷业主手册.docx",
+      "sha256": "07375dca78d55fd6b79a13e24d32ce67532dfc54a71b723305e1f7e1f0f7b4c4",
+      "bytes": 10953432
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_b/国际健康生态谷交付百问百答.docx",
+      "sha256": "08890c3cffd811225780b18348d489345cb515f09e1e21cbfb082b264cd91a55",
+      "bytes": 48977
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_b/国际健康生态谷项目销售手册.docx",
+      "sha256": "843649eb0736d666dd69de8d739a8ac39a4db4f19b6544c37d04571856a3399d",
+      "bytes": 7798805
+    },
+    {
+      "path": "01_原系统代码/data/raw/estate_b/国际生态谷销售说辞.docx",
+      "sha256": "5ef4db03ce0e2029abff7514789c041803e23a6d0ac19ee4187e3e220f2ef1b4",
+      "bytes": 69653
+    },
+    {
+      "path": "01_原系统代码/neo4j/constraints.cypher",
+      "sha256": "02c7b28d4e9f6e05b4830a403d5e074556e6980ed07c1ef1ae1dea0e40e6ec35",
+      "bytes": 1430
+    },
+    {
+      "path": "01_原系统代码/neo4j/indexes.cypher",
+      "sha256": "e6a5d24a46c0149d36a5f20495a8e1e6e92a5a802a685440d58d5575fe9737ce",
+      "bytes": 96
+    },
+    {
+      "path": "01_原系统代码/ontology/schema.json",
+      "sha256": "d533a83bf5e6747f396ad7c75b18c34cfe7d54c8ba5717de59a246283f85a807",
+      "bytes": 62606
+    },
+    {
+      "path": "01_原系统代码/pyproject.toml",
+      "sha256": "e1be179940b63e7e1489177726b7a988629bbe7b659e4fe253dcb4e90556ca78",
+      "bytes": 1058
+    },
+    {
+      "path": "01_原系统代码/scripts/check_day1_latency.py",
+      "sha256": "02f4e86edf1a5228c2972e72752003e480524b02b5e393be93aaa07456f45dbd",
+      "bytes": 1666
+    },
+    {
+      "path": "01_原系统代码/scripts/configure_llm.py",
+      "sha256": "552d7b5842d824dde6ccc312a385de27895c0957e82321cfe52d7ea466f9b0d7",
+      "bytes": 1622
+    },
+    {
+      "path": "01_原系统代码/scripts/evaluate_package_golden.py",
+      "sha256": "5cc30cd82734da3d87aa398a40bec8b51cfec3c9fb20af079009590cc3314f6f",
+      "bytes": 6815
+    },
+    {
+      "path": "01_原系统代码/scripts/run_day3.py",
+      "sha256": "074601baec03d034bf8a3a6b289cedb7a88c3891cc5f12b22ed64c8cfed8559a",
+      "bytes": 715
+    },
+    {
+      "path": "01_原系统代码/scripts/setup_day2.py",
+      "sha256": "bffbd2afdd72333ce6dfe9ceb2d5e4060447d5142eba9527b93b31ffb4c0e7b3",
+      "bytes": 2439
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/__init__.py",
+      "sha256": "ac2ff08041ce16909444a86c79350ea28a5c8479b02184423363209530ffffb4",
+      "bytes": 69
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/actions.py",
+      "sha256": "558bbcd2f3e777f1a444885efd15c4f1b03b08662ba63b628521af965db7a3e2",
+      "bytes": 10395
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/__init__.py",
+      "sha256": "48809cfa5a8d18896304a1a384c8bd209691ed3c4d5d04167be95f5ea6dc62df",
+      "bytes": 217
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/conversation.py",
+      "sha256": "e4d06be6729c53211e172be546cb3fb4308cc98d9d0f94ddeecd794268e495a3",
+      "bytes": 9185
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/dialogue.py",
+      "sha256": "4c19c7885baa8516c19eb0c07dabcf62d13f331899bdff951806116d7f5681f8",
+      "bytes": 9752
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/dialogue_contract.py",
+      "sha256": "74d42f05412ac322c1a8bcb3f5bc2497f6fc27c1b44d1643714b7615fd9efc49",
+      "bytes": 3681
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/knowledge_planning.py",
+      "sha256": "14b22cf74ceee563b0af1396a33cc6afeb1323355b0d9fc2dbd4ce71065489b0",
+      "bytes": 3896
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/llm.py",
+      "sha256": "d1454624756774fb05d618f3ec32293596452e0455ef9354b02543d8e667dca2",
+      "bytes": 38692
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/operation_state.py",
+      "sha256": "9c9435eaa8840f8fe38490008cf14b11108d81e30b127d180f3cca2fd6d113bb",
+      "bytes": 2085
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/planner.py",
+      "sha256": "ae0a775def4a400b816108c0d90967e252ea246a70061e292802ae87073c41c4",
+      "bytes": 4026
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/presentation.py",
+      "sha256": "a0036d9add6316d45082ad4baade556a4a64f4866bee3a4a834d73f669f8033f",
+      "bytes": 1500
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/reply_generation.py",
+      "sha256": "66202acd962ef9fa46803dcae060a841744e8f7586bee07e64b268c940c185bd",
+      "bytes": 23232
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/session.py",
+      "sha256": "57195d068e0f647ce9daeecd822e8f2dc5151363499e484f5aa8a3a20502d91f",
+      "bytes": 16444
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/steward_actions.py",
+      "sha256": "c1e9bac71f7ea4f75f060d450bb666a4334dc21eceaaae517f5b7a39b2f66686",
+      "bytes": 20808
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/tools.py",
+      "sha256": "3fccfe805064947483e00e8aa256e59100d570313003dea493a350c4f214913a",
+      "bytes": 1666
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/ui_backend.py",
+      "sha256": "6a8473647a1a510f3ac83a0d18a484a0deb1dbf70a3748516dbe95249271e23a",
+      "bytes": 984
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/agent/workflow.py",
+      "sha256": "b652a779b35cc053ae0110d582eb4c2e6cb6e3d3c3d444ef1e967b62104ef674",
+      "bytes": 6728
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/answer_selection.py",
+      "sha256": "52d2258bf193cb1669670f9c7ed11feca87c3b5f36aea9368a7756d4744a3080",
+      "bytes": 15142
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/auth.py",
+      "sha256": "51c0dc565c5c21beb34b49a216951bfd1530e9aa9671c0d7ae1f9d36be46d940",
+      "bytes": 12091
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/cli.py",
+      "sha256": "835adae947b8cb771ebf1951720ec3c682b0e972bf862aeb57e039008173fcc9",
+      "bytes": 1968
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/config.py",
+      "sha256": "64c5466dece7942756c31f44acf5009ef74f376ce85a6c87bfd55b2c9693ae8c",
+      "bytes": 461
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/day1_alignment_view.py",
+      "sha256": "50cbc4df3325565a79fd2053df399e27cb4899888d7b06b20dbc3376e608e6ca",
+      "bytes": 1442
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/day2_cli.py",
+      "sha256": "50e498c11935c5eaaf17e17ad6a5ae0eb090bcc20168fe62118bd0feaf052946",
+      "bytes": 9765
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/domain.py",
+      "sha256": "1df5f70d986ee736dc7cea1cf347e9ff71a9159dcb3f536e1010449a79a04806",
+      "bytes": 7880
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/faq_contract.py",
+      "sha256": "388aabf41701110fb6ecd239c9fb460900a31487c581b81bbf84e186368dcc83",
+      "bytes": 9902
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/faq_demo_review.py",
+      "sha256": "0d4113f2d5d914a70f426e6ac5ed202ea1965699c1b9b69560d78fb929635fe9",
+      "bytes": 3931
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/faq_importer.py",
+      "sha256": "b6ad99bf2842141db5164a7337184afc606e285369e789d3783d9437d4a98d10",
+      "bytes": 5989
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/faq_knowledge.py",
+      "sha256": "a273878a6972c081db9e61d0ad21778575dc3d397b1fae22cf95351b2aee305d",
+      "bytes": 6824
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/faq_review.py",
+      "sha256": "25524dabe8faf31b91caa2c619bd78c238a99e0d3042681673d24d37f726ea9d",
+      "bytes": 5387
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/handoff.py",
+      "sha256": "d065339c25e68ccb8d0aefdbb1cd7ad57bb17e5e6a3743a01f62b5609b48a3a3",
+      "bytes": 5339
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/importer.py",
+      "sha256": "ee9384f1dbca88b1fb24c30e4e5b46306276f79e7f8b0b0f409817c986387052",
+      "bytes": 10965
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/docx.py",
+      "sha256": "cc64d1e1058fb000d3a3a9ce224a014aa5870e8ebe1521217c74c8cefef2579d",
+      "bytes": 3308
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/extractor.py",
+      "sha256": "20c8784ae38011eb7a5aba71832e522bbab362b0110acf49dd09bf944a202c89",
+      "bytes": 3056
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/ocr.py",
+      "sha256": "b18d30fe5154a4adc48480d50332f905105acf98476586b5ea8b80d10a4734b1",
+      "bytes": 2980
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/pdf.py",
+      "sha256": "6ccba0f767431c4a365af121d87cfc2fffca1efccb5389eaa27e42b5ffc89224",
+      "bytes": 1696
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/ingestion/pipeline.py",
+      "sha256": "f13345b7db69cb2c82d0eafc2bc04bc05dcb82c033ed7fe4179c9a18dec330c2",
+      "bytes": 6694
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/knowledge.py",
+      "sha256": "44262508017fa1841c58fb76ce15ba359893ed46c4a1dad9e19da2aa34610b6a",
+      "bytes": 8490
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/models.py",
+      "sha256": "696a64399d9ed9228a08479bc1e2c9d05d4dc5bc59a00b72bc8144e830b8c5e8",
+      "bytes": 5972
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/__init__.py",
+      "sha256": "c5b54baaf1996dd723377f0c682765ba739f6e37e2774ec9f69ed6b95e41292b",
+      "bytes": 169
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/contract.py",
+      "sha256": "0f6ba3da9eb0daa1577d94df064fe17854363e09d4b5a81a1c8ba0c51d71c3fe",
+      "bytes": 2568
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/day1_poc.py",
+      "sha256": "0b0f47a089519a2df577c154b3d152b3fd9072ea1c6a956aaf3934b2cfa18916",
+      "bytes": 15363
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/golden_poc.py",
+      "sha256": "bf601e8ca118ba914cabdde534bc24238a006aac7c83f7c920446f6cde7d85b3",
+      "bytes": 4081
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/intent.py",
+      "sha256": "00adbae4b614ac07cdea03cc1285d1c891c4fec535592599e4b68d177da8f4c6",
+      "bytes": 9169
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/package_poc.py",
+      "sha256": "08e581de9e8713c475c625a549f1b3076154eb09328834a3ff9f9eadfdbc8c20",
+      "bytes": 5729
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/selector.py",
+      "sha256": "b381be0b355bb9f8ba127d3bb71cbc8fbd22a2496a752201abfae99fcd23033e",
+      "bytes": 11856
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/semantic_index.py",
+      "sha256": "684a7994c1f7ca72e5957c752433f5758c48c5bd7eab52eb6314796c6a020d71",
+      "bytes": 5750
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/service.py",
+      "sha256": "00d6c0c9947c9f3cea1de0db065bb8e8b51fdf05fc3c08afa68344302b9c3aa4",
+      "bytes": 25819
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/template_catalog.py",
+      "sha256": "a8a419aacfbcbb46e5586b844d3f904ab84e6654246bc4424740810fec005099",
+      "bytes": 11045
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa/templates.py",
+      "sha256": "dbce1a9cfc7bdf29efbddcbc9da13db6ab354abac3a6a0319057eb918d44edd7",
+      "bytes": 29438
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/qa_supplement.py",
+      "sha256": "92edc165d4cdd9b590f13fe73bc423b86b5d907d08b9d1a4695aedf65d7b7bfe",
+      "bytes": 17791
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/reports.py",
+      "sha256": "ba05cc7d00b3c6ce894f88a57de17ebb80b13f4bebb45938c26d4909fab8a5ba",
+      "bytes": 5311
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/repository.py",
+      "sha256": "27d50dc333d4d1c2c1a4127093556ae8ddc6fc9c8c9027267d27b8d2f996f791",
+      "bytes": 25102
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/response_policy.py",
+      "sha256": "58efa4c0ad57853a6657baf4bc700df41944959a1dbb43405574707da6500a8b",
+      "bytes": 4561
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/review.py",
+      "sha256": "89481ffea9aac3a9274bb859d44c8854bbf6654700910ba160e219a790b14080",
+      "bytes": 13960
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/runtime.py",
+      "sha256": "fbccf8f9326ebe7a45a2e34f7c236a47868ab03de8c79e65c5176ab81f62bdf4",
+      "bytes": 1371
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/schema.py",
+      "sha256": "6d92e33807fd414e3532709d657ca2d690fe5ce77731cbbf9d9ef55724cb7d11",
+      "bytes": 9300
+    },
+    {
+      "path": "01_原系统代码/src/property_ontology/streamlit_app.py",
+      "sha256": "d82aa421b869e1c3045454ad028fceaac3a83b1b2b51a8c78f73017bff91b363",
+      "bytes": 7858
+    },
+    {
+      "path": "01_原系统代码/tests/conftest.py",
+      "sha256": "2b9be3be67a5637997fdc0ea5edc2d8ec83acac84ce4e6b5e18404b9e0037639",
+      "bytes": 4756
+    },
+    {
+      "path": "01_原系统代码/tests/unit/golden_support.py",
+      "sha256": "71ecf465c82c8a7cc643c3b698ce66ce9e3cab091d6fc88c0be314eaad81eefb",
+      "bytes": 1652
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_day3_agent.py",
+      "sha256": "8518941c628c965bf532740eade07de00f664c3e3383768894c904418b49afc4",
+      "bytes": 13070
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_day3_ui.py",
+      "sha256": "869c4c17802bc09d01de417ee78264f59a0b070279be778d7310b3e39663f154",
+      "bytes": 11025
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_golden_joint_planning.py",
+      "sha256": "85c144ce09c8caa4f32c300d760a88b6e9d6186aeaec311cc51f4198497de74d",
+      "bytes": 12426
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_golden_questions.py",
+      "sha256": "cb94440de8a0f29166436c7599327048594e823605fa84c38d9807c98fb16fc6",
+      "bytes": 11695
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_golden_runtime_binding.py",
+      "sha256": "5e80b72e9608cc2ef2ea5e52458a6b5af7cb78b172c366734859aba028a6195f",
+      "bytes": 3107
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_golden_workbook.py",
+      "sha256": "c1f070cc0b026cd70a86d429431a203f69fb52e3caf35d13b2e2e58a4d408113",
+      "bytes": 3735
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_llm_dialogue.py",
+      "sha256": "551b49570f3cadd258d395c6ede750a09252696dd93887bdf98cc123df391181",
+      "bytes": 13238
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_operation_dialogue.py",
+      "sha256": "3cd8124a2089c1744722c5dcf0d3765b2c983430a949a99905520a501507b380",
+      "bytes": 10429
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_steward_conversation.py",
+      "sha256": "ce69b771c24d11954675f6c9f4a5a2fcab4c2004536252ffd125b178f6b9540a",
+      "bytes": 18466
+    },
+    {
+      "path": "01_原系统代码/tests/unit/test_template_agent.py",
+      "sha256": "13c77d8769c76499b9cad2627e5bcec564e4f97f6f8760a43aec17b0dc2dc431",
+      "bytes": 10103
+    },
+    {
+      "path": "01_原系统代码/tools/enact/replay.py",
+      "sha256": "728dba0e64ff41cb77f845f4e3823ad3a0753a710a28ee77fd2ac948da735b6a",
+      "bytes": 8593
+    },
+    {
+      "path": "01_原系统代码/tools/handoff/golden_questions.py",
+      "sha256": "fb4bbb3fa1ab7f1aa7f0a16407316c8a8333f0340faace2a2c31bc3ee1e2a887",
+      "bytes": 9568
+    },
+    {
+      "path": "01_原系统代码/uv.lock",
+      "sha256": "241741a30b392aaa065caae24c522d05bf0681efc90c5261e1714b434c204390",
+      "bytes": 274518
+    },
+    {
+      "path": "02_提示词原文/同次自然回复_INLINE_PROMPT.txt",
+      "sha256": "b6e94946a0e8e981121d94a2ac103e040bbf0eb788bc3cea5b4d6c0db126a341",
+      "bytes": 1613
+    },
+    {
+      "path": "02_提示词原文/回复生成_REPLY_PROMPT.txt",
+      "sha256": "42143b8646b3960f5753dfeb3709a535b0694b95876f8c6667dd622376fcc132",
+      "bytes": 6819
+    },
+    {
+      "path": "02_提示词原文/实际system_普通规划.txt",
+      "sha256": "8bbc902e96a7ec4a97230a8ace3bbc947d4ef91743bcb75a6b059bc28b2885ac",
+      "bytes": 10432
+    },
+    {
+      "path": "02_提示词原文/实际system_联合知识规划.txt",
+      "sha256": "2d2c071e690e9ea28f6deae410b1406d876c7fb40f4f63f7f46327b09792b5fb",
+      "bytes": 17566
+    },
+    {
+      "path": "02_提示词原文/知识语义匹配_MATCH_PROMPT.txt",
+      "sha256": "2c6b4a2c475950ba7bdaad0ab130199575dc7330c6bdebce43cd857d2c91ff4d",
+      "bytes": 6126
+    },
+    {
+      "path": "02_提示词原文/联合知识判定_JOINT_PROMPT.txt",
+      "sha256": "f42288e2c487d8b98ccb7fceb3224b469335eb358987c3211743a54450c5318b",
+      "bytes": 997
+    },
+    {
+      "path": "02_提示词原文/语义规划基础_SYSTEM_PROMPT.txt",
+      "sha256": "ddfc58205eba399dd6d1515707402db20cc3e12504b8115cfb109423d2c054f8",
+      "bytes": 8415
+    },
+    {
+      "path": "02_提示词原文/阶段对照.md",
+      "sha256": "f436f341f9732546690e1c28f04733b1936a589418ed04243787c34ad2991880",
+      "bytes": 1765
+    },
+    {
+      "path": "03_模型与参数/README.md",
+      "sha256": "0bb0f726a6b502947ce7075d173b054d50294276e1e8131aeb63b109ba42a09f",
+      "bytes": 1506
+    },
+    {
+      "path": "03_模型与参数/工具协议/planning_with_catalog.json",
+      "sha256": "07fdb4d28e9a08607421dbab312354762073672f71669c5b3e4160015426e85d",
+      "bytes": 13422
+    },
+    {
+      "path": "03_模型与参数/工具协议/planning_without_catalog.json",
+      "sha256": "b7a05bdd2c8d2f2ee7a6f22dc6388e05f4b784894ebfb857888b5877ce9bf24b",
+      "bytes": 8055
+    },
+    {
+      "path": "03_模型与参数/工具协议/reply_generation.json",
+      "sha256": "2bd7bc798c7392073a3694351a5fa664edf09c44448062f378f718cbc4603659",
+      "bytes": 1803
+    },
+    {
+      "path": "03_模型与参数/工具协议/semantic_match.json",
+      "sha256": "f7aa9633d7322357627fab46c198b5a9441e750713b3adae0767646cbe2b6f2b",
+      "bytes": 7073
+    },
+    {
+      "path": "03_模型与参数/模型与参数.json",
+      "sha256": "130e81b785ff88e3c0f41aa130405e1a86cc54333a21c8af4b2226aae9db5d30",
+      "bytes": 3455
+    },
+    {
+      "path": "03_模型与参数/状态注入_线上请求结构示例.json",
+      "sha256": "48f6adeb55c45fb563f06609d5a7b10c81fe1fe14612472afff56cb15791dfb1",
+      "bytes": 1108
+    },
+    {
+      "path": "04_对话日志/README.md",
+      "sha256": "b30a214f43a690308f72be344f8b79e6b29931bc2c7f27b0039b99ba223ddbb6",
+      "bytes": 1454
+    },
+    {
+      "path": "04_对话日志/current_human_request.json",
+      "sha256": "82045f0a7eeb2990715decfb98efdeec88c19e7a841bad8e229f534a6729c3a8",
+      "bytes": 10224
+    },
+    {
+      "path": "04_对话日志/current_success.json",
+      "sha256": "bba705889071d19bb616b5db296e0dc5b2ca9cc44a82335f38b84a6aa09aeb00",
+      "bytes": 69701
+    },
+    {
+      "path": "04_对话日志/historical_online_fallback.json",
+      "sha256": "454c710680c75faa69bf1c074e0b85410ac6327bdc0dab8ac557e4ec33231c73",
+      "bytes": 6423
+    },
+    {
+      "path": "04_对话日志/historical_online_success.json",
+      "sha256": "2a22cb04385ec52272ad9e5045fe18ce472eb42611eaff120bff3440a31be166",
+      "bytes": 5489
+    },
+    {
+      "path": "05_原始语料与切片/README.md",
+      "sha256": "0be51677262dc22ee7fecde9f1cb15a4ee3fc62eb243fb60e197305bc100dded",
+      "bytes": 1459
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E001/candidates.jsonl",
+      "sha256": "8af4ddd56f55fab4c398af406c2a52bf14ae1444115312b303fd7e3e4d2fcdbe",
+      "bytes": 22256
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E001/documents.jsonl",
+      "sha256": "a18f01dcb9c606ec55cbb4c7d5403dbb0fc0b82a2f065e45eba28283708df0ae",
+      "bytes": 2617
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E001/evidence.jsonl",
+      "sha256": "dbddf315ab3013d414b1d9e8d05ea18f6cb20adde9064dc95d1a5c6c3d9e8df6",
+      "bytes": 279709
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E001/manifest.json",
+      "sha256": "01e758832d6e327e416ebfaae29e6734f88d6b923bc5dd72ad0fd85682043ed4",
+      "bytes": 404
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E002/candidates.jsonl",
+      "sha256": "dbe1d5e94ee3ebddfaf9b27799329bbc0513e25a9410fbfe7f695e936a17b4c2",
+      "bytes": 22496
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E002/documents.jsonl",
+      "sha256": "bfd3af2198af54e4f094b7d70e951e232074b3317994e2d8680cb10647ec4ab1",
+      "bytes": 2807
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E002/evidence.jsonl",
+      "sha256": "f0a772704efd8fcc8c7bd69ac302b2e8acef47cd785d614ae8bf153a1194c2fc",
+      "bytes": 489958
+    },
+    {
+      "path": "05_原始语料与切片/实际解析切片/E002/manifest.json",
+      "sha256": "ba47679b78535eb9871ecd064862711d22135e4fbc81fb72a793cb0fdc56808d",
+      "bytes": 435
+    },
+    {
+      "path": "05_原始语料与切片/检索样例_历史真实在线.json",
+      "sha256": "5cd9659f89cfccf0208fb9a8348e685e8f15d7416fa2cedf4d9ed2d9e0589f7e",
+      "bytes": 2996
+    },
+    {
+      "path": "05_原始语料与切片/检索样例_当前标准题.json",
+      "sha256": "967c536ec1ff952e9974d6a544c814c9b90542a9d9aa9dcda100ed28568500bf",
+      "bytes": 3061
+    },
+    {
+      "path": "05_原始语料与切片/语料索引.json",
+      "sha256": "5354c47e75edcb2c1aabdefbf3fd47a8f7e70c2e665f012af1ceaadd45645224",
+      "bytes": 2342
+    },
+    {
+      "path": "06_报修卡片/README.md",
+      "sha256": "a47b18fa0ec47a639b5bc3a000b31f5d5c363044085927ccaaf467653cdcabf0",
+      "bytes": 1766
+    },
+    {
+      "path": "06_报修卡片/repair_actions_schema.json",
+      "sha256": "cd296d10143e7444843693bcdb12965a1eb0dc993654f657a2bafc698650f462",
+      "bytes": 1884
+    },
+    {
+      "path": "06_报修卡片/repair_preview.json",
+      "sha256": "23b950dc53631eeea375cf6287f3a98f6e874c92858c35f6cd669dfccd1f9a7c",
+      "bytes": 1095
+    },
+    {
+      "path": "07_评测口径/GoldenQuestions_期望答案与判定.json",
+      "sha256": "dd00f49bcac01faf61fa46d15865cb81cb8949d1e8829dbf920fbd4905cecde7",
+      "bytes": 257116
+    },
+    {
+      "path": "07_评测口径/README.md",
+      "sha256": "d2d2e51f660c034d429354d182587266b4c3dc64a6f4b284110e3c9a84dd90ca",
+      "bytes": 1594
+    },
+    {
+      "path": "07_评测口径/current_golden_regression.json",
+      "sha256": "4292e8381c129f0de373c40b95b365188f0b7ac20b798a982a9c009f8ec0ab72",
+      "bytes": 52551
+    },
+    {
+      "path": "07_评测口径/selected_unit_tests.json",
+      "sha256": "64656d2b78ce3f84fdf69585fc951cb92cc11384aec220726e2956091d9ffeb3",
+      "bytes": 369
+    },
+    {
+      "path": "README.md",
+      "sha256": "764c467dd3973515c78b25a8489d11d5423643c3a6b760ddffbcfa649488c9b4",
+      "bytes": 2251
+    }
+  ]
+}

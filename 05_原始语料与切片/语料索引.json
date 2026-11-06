@@ -1,0 +1,59 @@
+{
+  "original_files": [
+    {
+      "path": "../01_原系统代码/data/raw/estate_a/烟台港城华府业主手册.pdf",
+      "sha256": "980761ed6d2c349441e70ac0fec25291aa6591c2ae5dac6c24de29d99bd36013",
+      "bytes": 1250354
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_a/烟台港城华府交付答客问.docx",
+      "sha256": "b0edc86e80ebb92493c88fec420e41ea5cef33fb25067f8a79f86bfd833f1bb4",
+      "bytes": 103979
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_a/烟台港城华府装修手册.pdf",
+      "sha256": "b1ac41a8047bed26665457c7ae872b7184a6e66bbbdec85fdbdef9791d86bf17",
+      "bytes": 1342895
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_a/烟台港城华府销售说辞.docx",
+      "sha256": "59918cd1a3f870f173808e55131e8a0f428b2ce289192af1a168d2c9043a7c6c",
+      "bytes": 33614
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_b/国际健康生态谷业主手册.docx",
+      "sha256": "07375dca78d55fd6b79a13e24d32ce67532dfc54a71b723305e1f7e1f0f7b4c4",
+      "bytes": 10953432
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_b/国际健康生态谷交付百问百答.docx",
+      "sha256": "08890c3cffd811225780b18348d489345cb515f09e1e21cbfb082b264cd91a55",
+      "bytes": 48977
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_b/国际健康生态谷项目销售手册.docx",
+      "sha256": "843649eb0736d666dd69de8d739a8ac39a4db4f19b6544c37d04571856a3399d",
+      "bytes": 7798805
+    },
+    {
+      "path": "../01_原系统代码/data/raw/estate_b/国际生态谷销售说辞.docx",
+      "sha256": "5ef4db03ce0e2029abff7514789c041803e23a6d0ac19ee4187e3e220f2ef1b4",
+      "bytes": 69653
+    }
+  ],
+  "parser_artifact_counts": {
+    "E001": {
+      "documents": 4,
+      "evidence": 218,
+      "candidates": 7
+    },
+    "E002": {
+      "documents": 4,
+      "evidence": 110,
+      "candidates": 7
+    }
+  },
+  "active_qa_data": "../01_原系统代码/data/knowledge_sets/GOLDEN_QUESTIONS_100/GoldenQuestions_100问答.json",
+  "ontology_evidence_manifest": "../01_原系统代码/data/knowledge_sets/ONTOLOGY_PACKAGE_POC/manifest.json",
+  "source_use": "原件和实际解析切片用于复核来源与对照实验；现行 POC 回复从 Golden Questions 投影并核验冻结图谱证据。"
+}

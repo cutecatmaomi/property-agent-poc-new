@@ -1,0 +1,340 @@
+{
+  "type": "function",
+  "function": {
+    "name": "plan_property_turn",
+    "description": "分析用户诉求，只输出受控语义计划，不执行操作。",
+    "parameters": {
+      "$defs": {
+        "DialogueTask": {
+          "additionalProperties": false,
+          "properties": {
+            "intent": {
+              "enum": [
+                "KNOWLEDGE",
+                "REPAIR_GUIDANCE",
+                "REPAIR_PREPARE",
+                "REPAIR_CAUSE",
+                "TRACK_ORDER",
+                "COMPLAINT",
+                "SOCIAL",
+                "FEEDBACK",
+                "EXPLAIN_LIMITS",
+                "OPERATION_STATUS"
+              ],
+              "type": "string"
+            },
+            "source_quote": {
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            },
+            "query": {
+              "maxLength": 300,
+              "type": "string"
+            },
+            "service_code": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "activity",
+                    "membership",
+                    "complaint",
+                    "renovation",
+                    "property_fee",
+                    "parking",
+                    "warranty",
+                    "maintenance",
+                    "delivery",
+                    "purchase",
+                    "city_info",
+                    "property_service",
+                    "project_info"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "const": "NONE",
+                  "type": "string"
+                }
+              ]
+            },
+            "operation_subject": {
+              "enum": [
+                "CURRENT_ACTIONS",
+                "EXTERNAL_CONTACT",
+                "ORDER_RECEIPT"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "intent",
+            "source_quote"
+          ],
+          "type": "object"
+        },
+        "RepairSlots": {
+          "additionalProperties": false,
+          "properties": {
+            "location": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "part": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "symptom": {
+              "anyOf": [
+                {
+                  "maxLength": 100,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "started_at": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_time": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "ReplyDraft": {
+          "additionalProperties": false,
+          "properties": {
+            "segments": {
+              "items": {
+                "$ref": "#/$defs/ReplySegment"
+              },
+              "maxItems": 12,
+              "minItems": 1,
+              "type": "array"
+            },
+            "addressed_tasks": {
+              "items": {
+                "type": "integer"
+              },
+              "maxItems": 8,
+              "type": "array"
+            },
+            "question_slot": {
+              "enum": [
+                "NONE",
+                "location",
+                "part",
+                "symptom",
+                "available_time",
+                "correction_target",
+                "order_number",
+                "condition_choice"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "segments",
+            "addressed_tasks",
+            "question_slot"
+          ],
+          "type": "object"
+        },
+        "ReplySegment": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "TEXT",
+                "FACT"
+              ],
+              "type": "string"
+            },
+            "text": {
+              "anyOf": [
+                {
+                  "maxLength": 700,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fact_index": {
+              "anyOf": [
+                {
+                  "maximum": 30,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "enum": [
+            "SERVICE",
+            "CORRECTION",
+            "CANCEL",
+            "OUT_OF_SCOPE",
+            "HUMAN_REQUEST",
+            "RED_LINE",
+            "CLARIFY"
+          ],
+          "type": "string"
+        },
+        "tasks": {
+          "items": {
+            "$ref": "#/$defs/DialogueTask"
+          },
+          "maxItems": 4,
+          "type": "array"
+        },
+        "repair": {
+          "$ref": "#/$defs/RepairSlots"
+        },
+        "requires_free": {
+          "type": "boolean"
+        },
+        "use_repair_context": {
+          "type": "boolean"
+        },
+        "context_operation": {
+          "enum": [
+            "KEEP",
+            "CORRECT",
+            "PAUSE",
+            "CANCEL",
+            "RESUME",
+            "REPLACE"
+          ],
+          "type": "string"
+        },
+        "action_request": {
+          "enum": [
+            "NONE",
+            "INFORMATION_ONLY",
+            "EXPLICIT",
+            "CONDITIONAL"
+          ],
+          "type": "string"
+        },
+        "repair_request_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "condition_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "withdraw_condition_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_slot": {
+          "enum": [
+            "NONE",
+            "location",
+            "part",
+            "symptom",
+            "available_time",
+            "correction_target",
+            "order_number",
+            "condition_choice"
+          ],
+          "type": "string"
+        },
+        "inline_reply": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReplyDraft"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "boundary_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "route"
+      ],
+      "type": "object"
+    }
+  }
+}

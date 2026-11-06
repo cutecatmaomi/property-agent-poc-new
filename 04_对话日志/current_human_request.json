@@ -1,0 +1,222 @@
+{
+  "runtime_knowledge_set": "GOLDEN_QUESTIONS_100",
+  "provenance": "实际调用本包 AgentSession.chat 与 LangGraph 节点。使用临时模拟账号和业务存储。",
+  "provider_requests": 0,
+  "real_residents_or_production_orders": false,
+  "estate_id": "E001",
+  "user_message": "请帮我转人工客服。",
+  "deterministic_classification": "USER_REQUEST",
+  "planning_context_before_turn": {
+    "knowledge_set": "GOLDEN_QUESTIONS_100",
+    "question_set_id": "GOLDEN_QUESTIONS_100",
+    "history": [],
+    "repair_context": [],
+    "has_pending_repair": false,
+    "has_previous_order": false,
+    "free_condition_pending": false,
+    "repair_details": {},
+    "last_reply_kind": null,
+    "conversation_history": [],
+    "active_task": null,
+    "pending_conditions": [],
+    "missing_slots": [],
+    "last_tool_result": null,
+    "knowledge_context": null,
+    "error_or_correction_state": null,
+    "operation_state": {
+      "draft_status": "NONE",
+      "last_submitted_order_number": null,
+      "last_verified_order_result": null,
+      "external_contact_supported": false,
+      "external_contact_performed": false,
+      "real_dispatch_supported": false,
+      "completion_time_verified": false,
+      "business_environment": "MOCK"
+    }
+  },
+  "conversation_graph_node_outputs": [
+    {
+      "graph": "conversation",
+      "node": "understand",
+      "output": {
+        "skip_execution": false
+      }
+    },
+    {
+      "graph": "conversation",
+      "node": "execute",
+      "output": {
+        "reply": {
+          "kind": "FIXED_REPLY",
+          "text": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+          "data": {
+            "estate_id": "E001",
+            "response_type": "FIXED_REPLY",
+            "reason_code": "USER_REQUEST",
+            "red_line": false,
+            "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+            "matches": [],
+            "contact_channel": "PHONE",
+            "contact_phone": "4001099888",
+            "created": false
+          },
+          "trace": [
+            "guard",
+            "render"
+          ]
+        }
+      }
+    },
+    {
+      "graph": "conversation",
+      "node": "compose",
+      "output": {
+        "reply": {
+          "kind": "FIXED_REPLY",
+          "text": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+          "data": {
+            "estate_id": "E001",
+            "response_type": "FIXED_REPLY",
+            "reason_code": "USER_REQUEST",
+            "red_line": false,
+            "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+            "matches": [],
+            "contact_channel": "PHONE",
+            "contact_phone": "4001099888",
+            "created": false
+          },
+          "trace": [
+            "guard",
+            "render"
+          ]
+        }
+      }
+    },
+    {
+      "graph": "conversation",
+      "node": "remember",
+      "output": {
+        "session_id": "[临时测试标识已隐藏]",
+        "thread_id": "[临时测试标识已隐藏]",
+        "authenticated_resident_id": "E001:RES:owner1",
+        "estate_id": "E001",
+        "current_user_message": "请帮我转人工客服。",
+        "conversation_history": [
+          {
+            "role": "user",
+            "content": "请帮我转人工客服。",
+            "event": false,
+            "topic": null
+          },
+          {
+            "role": "assistant",
+            "content": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+            "kind": "FIXED_REPLY",
+            "topic": null
+          }
+        ],
+        "current_intent": null,
+        "current_topic": null,
+        "active_task": null,
+        "pending_tasks": [],
+        "collected_slots": {},
+        "missing_slots": [],
+        "pending_confirmation": null,
+        "pending_conditions": [],
+        "last_tool_result": null,
+        "knowledge_evidence": [],
+        "knowledge_context": null,
+        "error_or_correction_state": null,
+        "final_answer": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+        "request_key": "[临时测试标识已隐藏]",
+        "reply": {
+          "kind": "FIXED_REPLY",
+          "text": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+          "data": {
+            "estate_id": "E001",
+            "response_type": "FIXED_REPLY",
+            "reason_code": "USER_REQUEST",
+            "red_line": false,
+            "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+            "matches": [],
+            "contact_channel": "PHONE",
+            "contact_phone": "4001099888",
+            "created": false
+          },
+          "trace": [
+            "guard",
+            "render"
+          ]
+        }
+      }
+    }
+  ],
+  "turn_graph_node_outputs": [
+    {
+      "graph": "turn",
+      "node": "guard",
+      "output": {
+        "trace": [
+          "guard"
+        ],
+        "route": "render",
+        "result": {
+          "estate_id": "E001",
+          "response_type": "FIXED_REPLY",
+          "reason_code": "USER_REQUEST",
+          "red_line": false,
+          "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+          "matches": [],
+          "contact_channel": "PHONE",
+          "contact_phone": "4001099888",
+          "created": false
+        }
+      }
+    },
+    {
+      "graph": "turn",
+      "node": "render",
+      "output": {
+        "trace": [
+          "guard",
+          "render"
+        ],
+        "reply": {
+          "kind": "FIXED_REPLY",
+          "text": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+          "data": {
+            "estate_id": "E001",
+            "response_type": "FIXED_REPLY",
+            "reason_code": "USER_REQUEST",
+            "red_line": false,
+            "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+            "matches": [],
+            "contact_channel": "PHONE",
+            "contact_phone": "4001099888",
+            "created": false
+          }
+        }
+      }
+    }
+  ],
+  "reply": {
+    "kind": "FIXED_REPLY",
+    "text": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+    "data": {
+      "estate_id": "E001",
+      "response_type": "FIXED_REPLY",
+      "reason_code": "USER_REQUEST",
+      "red_line": false,
+      "message": "我是华润置地客服小助手，只能提供报事报修、活动查询和报名、城市资讯查询以及项目基础信息查询等相关功能！如果您有以上相关服务类问题，欢迎您再次联系我；如果您需要人工服务，可以拨打华润置地客户服务热线4001099888，我们将竭诚为您服务",
+      "matches": [],
+      "contact_channel": "PHONE",
+      "contact_phone": "4001099888",
+      "created": false
+    },
+    "trace": [
+      "guard",
+      "render"
+    ]
+  },
+  "work_orders_created": 0
+}

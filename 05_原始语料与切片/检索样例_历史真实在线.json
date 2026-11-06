@@ -1,0 +1,76 @@
+{
+  "recorded_on": "2026-11-03",
+  "source_log": "../04_对话日志/historical_online_success.json",
+  "question": "维保中心在什么位置？",
+  "estate_id": "E001",
+  "runtime_at_recording": "ONTOLOGY_PACKAGE_POC",
+  "stages": {
+    "semantic_request_strategy": "JOINT_WITH_PLANNING",
+    "retrieval_index": {
+      "status": "JOINT_VALIDATED_FULL_CATALOG",
+      "records": 50,
+      "approval_cache": false
+    },
+    "candidate_count": 50,
+    "semantic_validation": {
+      "matches": [
+        {
+          "template_id": "E001:POL:f78eb655d2161d328ebd47a5d3224a3c8e47a9fffe4237e1ef67885a267c5298",
+          "version_hash": "9c7a01a943f6ee35221dc0682ef243679f365648d8608a28d600c4b69f7eaa9b",
+          "coverage": "FULL",
+          "score": 0.97,
+          "reason": "用户直接询问维保中心位置，标准答案给出具体位置",
+          "question_relation": "EQUIVALENT",
+          "additional_fact_required": false
+        }
+      ],
+      "conflict_template_ids": [],
+      "other_fact_conflict_ids": [],
+      "knowledge_ids": [],
+      "sufficiency": "SUFFICIENT",
+      "clarification": "NONE",
+      "reason": "T45完整回答维保中心位置",
+      "source_comparisons": []
+    }
+  },
+  "retrieval_result": {
+    "status": "ANSWERED",
+    "answer_source": "TEMPLATE",
+    "matched_template_id": "E001:POL:f78eb655d2161d328ebd47a5d3224a3c8e47a9fffe4237e1ef67885a267c5298",
+    "matched_policy_ids": [
+      "E001:POL:f78eb655d2161d328ebd47a5d3224a3c8e47a9fffe4237e1ef67885a267c5298"
+    ],
+    "evidence_refs": [
+      {
+        "chunk_id": "E001:CHUNK:6bff0564aee3dfd9091bb029ab24f961f44bef5d1c3363f3d7b05cda3d8aa8b2",
+        "document_id": "E001:DOC:e8297fe760719ba646d94f59fc3bf00cc777b60f03668c586038e5349f26b9a7",
+        "file": "data/raw/estate_a/烟台港城华府交付答客问.docx",
+        "locator": {
+          "kind": "DOCX_XML",
+          "parts": [
+            {
+              "end_char": 8,
+              "paragraph_index": 62,
+              "start_char": 0,
+              "xml_path": "/w:document/w:body/w:p[27]"
+            },
+            {
+              "end_char": 111,
+              "paragraph_index": 63,
+              "start_char": 0,
+              "xml_path": "/w:document/w:body/w:p[28]"
+            }
+          ]
+        },
+        "excerpt": "维保中心的位置？\n答:维保中心位于  6 栋 1 单元2层。您有任何保修服务需求，欢迎联系维保工程师，维保工程师联系方式在楼栋单元大堂均有张贴，您也可以拨打华润置地4001099888客服热线或在润·服务小程序上进行报修，我们竭诚为您服务。",
+        "document_version": "b0edc86e80ebb92493c88fec420e41ea5cef33fb25067f8a79f86bfd833f1bb4",
+        "chunk_version": "6bff0564aee3dfd9091bb029ab24f961f44bef5d1c3363f3d7b05cda3d8aa8b2"
+      }
+    ],
+    "decision_reason": "SEMANTIC_FULL_COVERAGE",
+    "generation_llm_called": false,
+    "warnings": [
+      "POC_ONLY_CURRENT_VALIDITY_UNCONFIRMED"
+    ]
+  }
+}

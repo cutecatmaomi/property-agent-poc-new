@@ -1,0 +1,1918 @@
+{
+  "runtime_knowledge_set": "GOLDEN_QUESTIONS_100",
+  "provenance": "实际调用本包 AgentSession.chat 与 LangGraph 节点。使用临时模拟账号和业务存储。",
+  "provider_requests": 0,
+  "real_residents_or_production_orders": false,
+  "total": 100,
+  "passed": 100,
+  "by_estate": {
+    "E001": 50,
+    "E002": 50
+  },
+  "workbook_reference_exact": 99,
+  "workbook_reference_differences": [
+    "E001-GQ-009"
+  ],
+  "results": [
+    {
+      "question_id": "E001-GQ-001",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-002",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-003",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-004",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-005",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-006",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-007",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-008",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-009",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": false
+    },
+    {
+      "question_id": "E001-GQ-010",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-011",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-012",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-013",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-014",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-015",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-016",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-017",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-018",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-019",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-020",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-021",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-022",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-023",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-024",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-025",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-026",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-027",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-028",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-029",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-030",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-031",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-032",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-033",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-034",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-035",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-036",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-037",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-038",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-039",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-040",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-041",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-042",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-043",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-044",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-045",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-046",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-047",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-048",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-049",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E001-GQ-050",
+      "estate_id": "E001",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-001",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-002",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-003",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-004",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-005",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-006",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-007",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-008",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-009",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-010",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-011",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-012",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-013",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-014",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-015",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-016",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-017",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-018",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-019",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-020",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-021",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-022",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-023",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-024",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-025",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-026",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-027",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-028",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-029",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-030",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-031",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-032",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-033",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-034",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-035",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-036",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-037",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-038",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-039",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-040",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-041",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-042",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-043",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-044",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-045",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-046",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-047",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-048",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-049",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    },
+    {
+      "question_id": "E002-GQ-050",
+      "estate_id": "E002",
+      "checks": {
+        "knowledge_set": true,
+        "estate": true,
+        "answer_status": true,
+        "template_source": true,
+        "golden_question_id": true,
+        "policy_id": true,
+        "policy_version": true,
+        "authorized_answer_exact": true,
+        "zero_generation_calls": true,
+        "exclusive_route": true,
+        "no_work_order": true
+      },
+      "passed": true,
+      "workbook_reference_exact": true
+    }
+  ]
+}

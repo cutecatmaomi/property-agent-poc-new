@@ -1,0 +1,76 @@
+{
+  "run": "../04_对话日志/current_success.json",
+  "knowledge_set": "GOLDEN_QUESTIONS_100",
+  "question": "维保中心在什么位置？",
+  "estate_id": "E001",
+  "workflow_trace": [
+    "guard",
+    "plan",
+    "dialogue",
+    "render"
+  ],
+  "selection_mode": "EXACT_APPROVED_QUESTION",
+  "retrieval_result": {
+    "status": "ANSWERED",
+    "answer_source": "TEMPLATE",
+    "matched_template_id": "E001-GQ-010",
+    "matched_policy_ids": [
+      "E001:POL:f78eb655d2161d328ebd47a5d3224a3c8e47a9fffe4237e1ef67885a267c5298"
+    ],
+    "template_version_hash": "9c7a01a943f6ee35221dc0682ef243679f365648d8608a28d600c4b69f7eaa9b",
+    "evidence_refs": [
+      {
+        "chunk_id": "E001:CHUNK:6bff0564aee3dfd9091bb029ab24f961f44bef5d1c3363f3d7b05cda3d8aa8b2",
+        "document_id": "E001:DOC:e8297fe760719ba646d94f59fc3bf00cc777b60f03668c586038e5349f26b9a7",
+        "file": "data/raw/estate_a/烟台港城华府交付答客问.docx",
+        "locator": {
+          "kind": "DOCX_XML",
+          "parts": [
+            {
+              "end_char": 8,
+              "paragraph_index": 62,
+              "start_char": 0,
+              "xml_path": "/w:document/w:body/w:p[27]"
+            },
+            {
+              "end_char": 111,
+              "paragraph_index": 63,
+              "start_char": 0,
+              "xml_path": "/w:document/w:body/w:p[28]"
+            }
+          ]
+        },
+        "excerpt": "维保中心的位置？\n答:维保中心位于  6 栋 1 单元2层。您有任何保修服务需求，欢迎联系维保工程师，维保工程师联系方式在楼栋单元大堂均有张贴，您也可以拨打华润置地4001099888客服热线或在润·服务小程序上进行报修，我们竭诚为您服务。",
+        "document_version": "b0edc86e80ebb92493c88fec420e41ea5cef33fb25067f8a79f86bfd833f1bb4",
+        "chunk_version": "6bff0564aee3dfd9091bb029ab24f961f44bef5d1c3363f3d7b05cda3d8aa8b2"
+      }
+    ],
+    "standard_answer": "维保中心位于6栋1单元2层。\n适用说明：来自交付阶段资料；不是Mock房屋实例的地址。",
+    "generation_llm_call_count": 0
+  },
+  "selection_debug": {
+    "conditions": {
+      "applicable_to": {
+        "building_form": "UNSPECIFIED",
+        "estate_id": "E001",
+        "has_elevator": null,
+        "renovation_activity": "UNSPECIFIED",
+        "residence_category": "UNSPECIFIED",
+        "warranty_item": null
+      },
+      "current_applicability": "UNCONFIRMED",
+      "description": "来自交付阶段资料；不是Mock房屋实例的地址。",
+      "qualifiers": [],
+      "validity": "UNCONFIRMED"
+    },
+    "graph_reference_mapping": {
+      "document_id": "E001:DOC:e8297fe760719ba646d94f59fc3bf00cc777b60f03668c586038e5349f26b9a7",
+      "existing_evidence_chunk_ids": [
+        "E001:CHUNK:6bff0564aee3dfd9091bb029ab24f961f44bef5d1c3363f3d7b05cda3d8aa8b2"
+      ],
+      "policy_id": "E001:POL:f78eb655d2161d328ebd47a5d3224a3c8e47a9fffe4237e1ef67885a267c5298"
+    },
+    "legacy_retrieval_called": false,
+    "semantic_validation": null
+  }
+}

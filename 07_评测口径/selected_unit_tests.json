@@ -1,0 +1,16 @@
+{
+  "run": "2026-11-06 打包后目录复测",
+  "total": 83,
+  "passed": 83,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "provider_requests": 0,
+  "suites": [
+    "tests.unit.test_day3_agent",
+    "tests.unit.test_day3_ui",
+    "tests.unit.test_golden_joint_planning",
+    "tests.unit.test_golden_runtime_binding",
+    "tests.unit.test_operation_dialogue"
+  ]
+}

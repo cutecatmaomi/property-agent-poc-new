@@ -1,0 +1,106 @@
+{
+  "knowledge_set": "GOLDEN_QUESTIONS_100",
+  "settings_provenance": "2026-11-05 已导出的非敏感在线设置，与本包源码发包前拦截的实际请求结构对照",
+  "online_settings": {
+    "mode": "online",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "timeout_seconds": 20.0,
+    "max_tokens": 1800,
+    "strict_tools": false,
+    "thinking_disabled": true,
+    "inline_replies": true,
+    "joint_knowledge_planning": true
+  },
+  "requests": {
+    "planning_without_catalog": {
+      "model": "deepseek-flash",
+      "max_tokens": 1800,
+      "temperature_explicitly_sent": false,
+      "response_format_explicitly_sent": false,
+      "forced_tool_call": {
+        "type": "function",
+        "function": {
+          "name": "plan_property_turn"
+        }
+      },
+      "tool_strict": false,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system_prompt_file": "../02_提示词原文/实际system_普通规划.txt",
+      "system_prompt_sha256": "8bbc902e96a7ec4a97230a8ace3bbc947d4ef91743bcb75a6b059bc28b2885ac",
+      "tool_schema": "工具协议/planning_without_catalog.json"
+    },
+    "planning_with_catalog": {
+      "model": "deepseek-flash",
+      "max_tokens": 1800,
+      "temperature_explicitly_sent": false,
+      "response_format_explicitly_sent": false,
+      "forced_tool_call": {
+        "type": "function",
+        "function": {
+          "name": "plan_property_turn"
+        }
+      },
+      "tool_strict": false,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system_prompt_file": "../02_提示词原文/实际system_联合知识规划.txt",
+      "system_prompt_sha256": "2d2c071e690e9ea28f6deae410b1406d876c7fb40f4f63f7f46327b09792b5fb",
+      "tool_schema": "工具协议/planning_with_catalog.json"
+    },
+    "semantic_match": {
+      "model": "deepseek-flash",
+      "max_tokens": 1800,
+      "temperature_explicitly_sent": false,
+      "response_format_explicitly_sent": false,
+      "forced_tool_call": {
+        "type": "function",
+        "function": {
+          "name": "match_property_templates"
+        }
+      },
+      "tool_strict": false,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system_prompt_file": "../02_提示词原文/知识语义匹配_MATCH_PROMPT.txt",
+      "system_prompt_sha256": "2c6b4a2c475950ba7bdaad0ab130199575dc7330c6bdebce43cd857d2c91ff4d",
+      "tool_schema": "工具协议/semantic_match.json"
+    },
+    "reply_generation": {
+      "model": "deepseek-flash",
+      "max_tokens": 1400,
+      "temperature_explicitly_sent": false,
+      "response_format_explicitly_sent": false,
+      "forced_tool_call": {
+        "type": "function",
+        "function": {
+          "name": "compose_property_reply"
+        }
+      },
+      "tool_strict": false,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system_prompt_file": "../02_提示词原文/回复生成_REPLY_PROMPT.txt",
+      "system_prompt_sha256": "42143b8646b3960f5753dfeb3709a535b0694b95876f8c6667dd622376fcc132",
+      "tool_schema": "工具协议/reply_generation.json"
+    }
+  },
+  "deterministic_stages": [
+    "classify_message",
+    "标准题精确命中",
+    "本地 LSA 候选排序",
+    "授权与来源检查",
+    "模板正文输出",
+    "用户确认与工单幂等"
+  ],
+  "provider_requests_during_capture": 0
+}

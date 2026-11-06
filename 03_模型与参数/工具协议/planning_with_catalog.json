@@ -1,0 +1,557 @@
+{
+  "type": "function",
+  "function": {
+    "name": "plan_property_turn",
+    "description": "分析用户诉求，只输出受控语义计划，不执行操作。",
+    "parameters": {
+      "$defs": {
+        "DialogueTask": {
+          "additionalProperties": false,
+          "properties": {
+            "intent": {
+              "enum": [
+                "KNOWLEDGE",
+                "REPAIR_GUIDANCE",
+                "REPAIR_PREPARE",
+                "REPAIR_CAUSE",
+                "TRACK_ORDER",
+                "COMPLAINT",
+                "SOCIAL",
+                "FEEDBACK",
+                "EXPLAIN_LIMITS",
+                "OPERATION_STATUS"
+              ],
+              "type": "string"
+            },
+            "source_quote": {
+              "maxLength": 300,
+              "minLength": 1,
+              "type": "string"
+            },
+            "query": {
+              "maxLength": 300,
+              "type": "string"
+            },
+            "service_code": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "activity",
+                    "membership",
+                    "complaint",
+                    "renovation",
+                    "property_fee",
+                    "parking",
+                    "warranty",
+                    "maintenance",
+                    "delivery",
+                    "purchase",
+                    "city_info",
+                    "property_service",
+                    "project_info"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "const": "NONE",
+                  "type": "string"
+                }
+              ]
+            },
+            "operation_subject": {
+              "enum": [
+                "CURRENT_ACTIONS",
+                "EXTERNAL_CONTACT",
+                "ORDER_RECEIPT"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "intent",
+            "source_quote"
+          ],
+          "type": "object"
+        },
+        "RepairSlots": {
+          "additionalProperties": false,
+          "properties": {
+            "location": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "part": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "symptom": {
+              "anyOf": [
+                {
+                  "maxLength": 100,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "started_at": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_time": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "ReplyDraft": {
+          "additionalProperties": false,
+          "properties": {
+            "segments": {
+              "items": {
+                "$ref": "#/$defs/ReplySegment"
+              },
+              "maxItems": 12,
+              "minItems": 1,
+              "type": "array"
+            },
+            "addressed_tasks": {
+              "items": {
+                "type": "integer"
+              },
+              "maxItems": 8,
+              "type": "array"
+            },
+            "question_slot": {
+              "enum": [
+                "NONE",
+                "location",
+                "part",
+                "symptom",
+                "available_time",
+                "correction_target",
+                "order_number",
+                "condition_choice"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "segments",
+            "addressed_tasks",
+            "question_slot"
+          ],
+          "type": "object"
+        },
+        "ReplySegment": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "TEXT",
+                "FACT"
+              ],
+              "type": "string"
+            },
+            "text": {
+              "anyOf": [
+                {
+                  "maxLength": 700,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fact_index": {
+              "anyOf": [
+                {
+                  "maximum": 30,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "SemanticDecision": {
+          "additionalProperties": false,
+          "properties": {
+            "matches": {
+              "items": {
+                "$ref": "#/$defs/TemplateMatch"
+              },
+              "maxItems": 30,
+              "type": "array"
+            },
+            "conflict_template_ids": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 12,
+              "type": "array"
+            },
+            "other_fact_conflict_ids": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 12,
+              "type": "array"
+            },
+            "knowledge_ids": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 32,
+              "type": "array"
+            },
+            "sufficiency": {
+              "enum": [
+                "SUFFICIENT",
+                "PARTIAL",
+                "NONE"
+              ],
+              "type": "string"
+            },
+            "clarification": {
+              "enum": [
+                "NONE",
+                "CONTACT_MODE",
+                "HOUSING",
+                "SUBJECT",
+                "FACT"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "maxLength": 400,
+              "type": "string"
+            },
+            "source_comparisons": {
+              "items": {
+                "$ref": "#/$defs/SourceComparison"
+              },
+              "maxItems": 12,
+              "type": "array"
+            }
+          },
+          "type": "object"
+        },
+        "SourceComparison": {
+          "additionalProperties": false,
+          "properties": {
+            "left": {
+              "type": "string"
+            },
+            "right": {
+              "type": "string"
+            },
+            "relation": {
+              "enum": [
+                "EQUIVALENT",
+                "COMPLEMENTARY",
+                "CONFLICT",
+                "UNRELATED"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "left",
+            "right",
+            "relation"
+          ],
+          "type": "object"
+        },
+        "TaskSelection": {
+          "additionalProperties": false,
+          "properties": {
+            "task_index": {
+              "maximum": 3,
+              "minimum": 0,
+              "type": "integer"
+            },
+            "decision": {
+              "$ref": "#/$defs/SemanticDecision"
+            }
+          },
+          "required": [
+            "task_index",
+            "decision"
+          ],
+          "type": "object"
+        },
+        "TemplateMatch": {
+          "additionalProperties": false,
+          "properties": {
+            "template_id": {
+              "type": "string",
+              "enum": [
+                "T0",
+                "T1",
+                "T2",
+                "T3",
+                "T4",
+                "T5",
+                "T6",
+                "T7",
+                "T8",
+                "T9",
+                "T10",
+                "T11",
+                "T12",
+                "T13",
+                "T14",
+                "T15",
+                "T16",
+                "T17",
+                "T18",
+                "T19",
+                "T20",
+                "T21",
+                "T22",
+                "T23",
+                "T24",
+                "T25",
+                "T26",
+                "T27",
+                "T28",
+                "T29",
+                "T30",
+                "T31",
+                "T32",
+                "T33",
+                "T34",
+                "T35",
+                "T36",
+                "T37",
+                "T38",
+                "T39",
+                "T40",
+                "T41",
+                "T42",
+                "T43",
+                "T44",
+                "T45",
+                "T46",
+                "T47",
+                "T48",
+                "T49"
+              ]
+            },
+            "version_hash": {
+              "type": "string"
+            },
+            "coverage": {
+              "enum": [
+                "FULL",
+                "PARTIAL",
+                "NONE"
+              ],
+              "type": "string"
+            },
+            "score": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "reason": {
+              "maxLength": 300,
+              "type": "string"
+            },
+            "question_relation": {
+              "enum": [
+                "EQUIVALENT",
+                "NARROWER",
+                "RELATED",
+                "DIFFERENT",
+                "UNSPECIFIED"
+              ],
+              "type": "string"
+            },
+            "additional_fact_required": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "template_id",
+            "version_hash",
+            "coverage",
+            "score",
+            "reason",
+            "additional_fact_required",
+            "question_relation"
+          ],
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "enum": [
+            "SERVICE",
+            "CORRECTION",
+            "CANCEL",
+            "OUT_OF_SCOPE",
+            "HUMAN_REQUEST",
+            "RED_LINE",
+            "CLARIFY"
+          ],
+          "type": "string"
+        },
+        "tasks": {
+          "items": {
+            "$ref": "#/$defs/DialogueTask"
+          },
+          "maxItems": 4,
+          "type": "array"
+        },
+        "repair": {
+          "$ref": "#/$defs/RepairSlots"
+        },
+        "requires_free": {
+          "type": "boolean"
+        },
+        "use_repair_context": {
+          "type": "boolean"
+        },
+        "context_operation": {
+          "enum": [
+            "KEEP",
+            "CORRECT",
+            "PAUSE",
+            "CANCEL",
+            "RESUME",
+            "REPLACE"
+          ],
+          "type": "string"
+        },
+        "action_request": {
+          "enum": [
+            "NONE",
+            "INFORMATION_ONLY",
+            "EXPLICIT",
+            "CONDITIONAL"
+          ],
+          "type": "string"
+        },
+        "repair_request_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "condition_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "withdraw_condition_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_slot": {
+          "enum": [
+            "NONE",
+            "location",
+            "part",
+            "symptom",
+            "available_time",
+            "correction_target",
+            "order_number",
+            "condition_choice"
+          ],
+          "type": "string"
+        },
+        "inline_reply": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReplyDraft"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "boundary_quote": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "template_selections": {
+          "items": {
+            "$ref": "#/$defs/TaskSelection"
+          },
+          "maxItems": 4,
+          "type": "array"
+        }
+      },
+      "required": [
+        "route"
+      ],
+      "type": "object"
+    }
+  }
+}

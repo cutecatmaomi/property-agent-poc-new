@@ -1,0 +1,166 @@
+{
+  "provenance": "2026-11-03 已保存的 Golden Questions 真实在线模型回归。用 POC 测试输入与测试身份。",
+  "source_file": "outputs/golden_accuracy_fix_20261103/heldout_final.jsonl",
+  "source_line": 7,
+  "original_line_sha256": "abb4c5569f6ac75fbacaf1f2dd9398bc788977bf46e885648fdd1c9316a8f969",
+  "runtime_knowledge_set_at_recording": "ONTOLOGY_PACKAGE_POC",
+  "version_note": "当时使用冻结图谱的 Policy 题目投影，本交付版用 Golden 问题及 GQ ID。保留当时结果和 ID。",
+  "case_id": "PARA-E001-GQ-025",
+  "estate_id": "E001",
+  "question": "门卡丢了，补卡要带啥去哪里办？",
+  "model_tools_called": [
+    "plan_property_turn",
+    "match_property_templates",
+    "compose_property_reply"
+  ],
+  "trace": [
+    "guard",
+    "plan",
+    "dialogue",
+    "render"
+  ],
+  "stage_outputs": {
+    "decision": {
+      "route": "SERVICE",
+      "tasks": [
+        {
+          "intent": "KNOWLEDGE",
+          "source_quote": "门卡丢了，补卡要带啥去哪里办？",
+          "query": "门禁卡丢失补办需要携带什么材料、到哪里办理",
+          "service_code": "property_service",
+          "operation_subject": "CURRENT_ACTIONS"
+        }
+      ],
+      "repair": {
+        "location": null,
+        "part": null,
+        "symptom": null,
+        "started_at": null,
+        "available_time": null
+      },
+      "requires_free": false,
+      "use_repair_context": false,
+      "context_operation": "KEEP",
+      "action_request": "INFORMATION_ONLY",
+      "repair_request_quote": null,
+      "condition_quote": null,
+      "withdraw_condition_quote": null,
+      "missing_slot": "NONE",
+      "inline_reply": null,
+      "boundary_quote": null
+    },
+    "joint_planning": {
+      "joint_knowledge_offered": true,
+      "joint_knowledge_valid": false,
+      "joint_knowledge_error": {
+        "code": "INVALID_TEMPLATE_MATCH"
+      }
+    },
+    "semantic_request_strategy": "SEPARATE",
+    "joint_fallback_reason": "NO_VALID_PLANNING_SELECTION",
+    "retrieval_index": {
+      "status": "REUSED",
+      "algorithm": "corpus-lsa-v2",
+      "fingerprint": "a1270ddbc7bcd085d5a37688b253821e21e9a3def5fa8445edad9469e2fd6118",
+      "dimensions": 49,
+      "records": 50,
+      "approval_cache": false
+    },
+    "candidate_count": 50,
+    "semantic_validation": {
+      "matches": [
+        {
+          "template_id": "E001:POL:f8d16ae43d673729c39c21c851076f0543afc686e7a971d6c89fa93e87a9475b",
+          "version_hash": "6da5e3cf0b76a42972edebfc7c571f149fa68230131d1f67286a6649c1e8dc01",
+          "coverage": "PARTIAL",
+          "score": 0.72,
+          "reason": "标准答案说明补办门禁卡需持业主身份证原件到物业服务中心办理，覆盖材料与地点；但未说明是否需其他材料，且'去哪里'的具体位置需另查物业服务中心位置（T47）。",
+          "question_relation": "EQUIVALENT",
+          "additional_fact_required": true
+        },
+        {
+          "template_id": "E001:POL:f9fcc05517c1df94f2236f679e732698c12a774abcec82d6514313bc12cef25e",
+          "version_hash": "2faeff39b73df3a3bd544c5cdca168b65f5e1ea771921d28ad443652ea7bf015",
+          "coverage": "PARTIAL",
+          "score": 0.5,
+          "reason": "可补充物业服务中心在6栋1单元2层，回答'去哪里'的具体位置。",
+          "question_relation": "RELATED",
+          "additional_fact_required": false
+        }
+      ],
+      "conflict_template_ids": [],
+      "other_fact_conflict_ids": [],
+      "knowledge_ids": [],
+      "sufficiency": "PARTIAL",
+      "clarification": "NONE",
+      "reason": "用户问门卡补办的材料和办理地点。T0直接给出持业主身份证原件到物业服务中心办理；T47补充物业服务中心具体位置。整体部分覆盖，T0标注需额外事实（是否为全部所需材料未明确）。",
+      "source_comparisons": []
+    },
+    "dialogue_outcomes": [
+      {
+        "task_index": 0,
+        "intent": "KNOWLEDGE",
+        "status": "NOT_FOUND",
+        "query": "门禁卡丢失补办需要携带什么材料、到哪里办理",
+        "answer_text": null,
+        "answer_source": "GENERAL_CONVERSATION",
+        "coverage": "NONE",
+        "source_type": null,
+        "reason": "NO_ELIGIBLE_TEMPLATE",
+        "quote_notice": null
+      }
+    ],
+    "natural_response": {
+      "generation_mode": "LLM_GROUNDED",
+      "validated": true,
+      "request_strategy": "SEPARATE",
+      "segments": {
+        "segments": [
+          {
+            "kind": "TEXT",
+            "text": "抱歉，补办门卡需要带什么材料、具体在哪个位置办理，我这边暂时没有可确认的信息，不能凭猜测告诉您。",
+            "fact_index": null
+          },
+          {
+            "kind": "TEXT",
+            "text": "为了不让您白跑一趟，建议先确认清楚再去。我这边可以帮您记录门卡丢失的情况并准备报修草稿，您确认后提交，由人工跟进补办指引，需要我这样处理吗？",
+            "fact_index": null
+          }
+        ],
+        "addressed_tasks": [
+          0
+        ],
+        "question_slot": "NONE"
+      },
+      "metrics": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 1955,
+          "completion_tokens": 181,
+          "total_tokens": 2136,
+          "prompt_tokens_details": {
+            "cached_tokens": 1408
+          },
+          "prompt_cache_hit_tokens": 1408,
+          "prompt_cache_miss_tokens": 547
+        },
+        "valid_schema": true
+      },
+      "repairs": []
+    }
+  },
+  "answer": {
+    "status": "NOT_FOUND",
+    "answer_source": "GENERAL_CONVERSATION",
+    "matched_template_id": null,
+    "matched_policy_ids": [],
+    "evidence_refs": [],
+    "decision_reason": "NO_ELIGIBLE_TEMPLATE",
+    "generation_llm_called": true,
+    "warnings": []
+  },
+  "final_reply_kind": "FIXED_REPLY",
+  "final_reply_text": "抱歉，补办门卡需要带什么材料、具体在哪个位置办理，我这边暂时没有可确认的信息，不能凭猜测告诉您。\n为了不让您白跑一趟，建议先确认清楚再去。我这边可以帮您记录门卡丢失的情况并准备报修草稿，您确认后提交，由人工跟进补办指引，需要我这样处理吗？",
+  "original_verdict": false,
+  "raw_model_response": "存档保存的是后端验证后的输出与摘要。"
+}

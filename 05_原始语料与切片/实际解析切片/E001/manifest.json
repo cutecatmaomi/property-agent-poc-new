@@ -1,0 +1,13 @@
+{
+  "estate_id": "E001",
+  "documents": 4,
+  "evidence_chunks": 218,
+  "candidates": 7,
+  "approved_by_pipeline": 0,
+  "statuses": {
+    "烟台港城华府业主手册.pdf": "TEXT_EXTRACTED",
+    "烟台港城华府交付答客问.docx": "TEXT_EXTRACTED_IMAGES_PENDING_REVIEW",
+    "烟台港城华府装修手册.pdf": "TEXT_EXTRACTED",
+    "烟台港城华府销售说辞.docx": "TEXT_EXTRACTED"
+  }
+}

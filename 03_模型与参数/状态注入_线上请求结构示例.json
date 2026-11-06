@@ -1,0 +1,42 @@
+{
+  "capture": "源码构建真实请求，传输前拦截，输入为合成会话",
+  "planning_with_catalog": {
+    "messages_role_order": [
+      "system",
+      "user",
+      "user"
+    ],
+    "catalog_field_names": [
+      "estate_id",
+      "knowledge_set",
+      "usage_mode",
+      "templates"
+    ],
+    "catalog_items": 50,
+    "current_turn_payload": {
+      "message": "交付维修过程中想了解进度，可以通过什么渠道咨询？",
+      "estate_id": "E001",
+      "knowledge_set": "GOLDEN_QUESTIONS_100",
+      "question_set_id": "GOLDEN_QUESTIONS_100",
+      "conversation_history": [],
+      "knowledge_context": null
+    }
+  },
+  "separate_matching_payload_fields": [
+    "message",
+    "context",
+    "templates",
+    "knowledge"
+  ],
+  "reply_payload": {
+    "message": "交付维修过程中想了解进度，可以通过什么渠道咨询？",
+    "estate_id": "E001",
+    "knowledge_set": "GOLDEN_QUESTIONS_100",
+    "question_set_id": "GOLDEN_QUESTIONS_100",
+    "conversation_history": [],
+    "knowledge_context": null,
+    "missing_slots": [
+      "symptom"
+    ]
+  }
+}

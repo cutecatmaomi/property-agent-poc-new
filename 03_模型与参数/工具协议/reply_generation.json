@@ -1,0 +1,81 @@
+{
+  "type": "function",
+  "function": {
+    "name": "compose_property_reply",
+    "description": "依据受保护事实生成自然物业管家回复，不执行业务。",
+    "parameters": {
+      "$defs": {
+        "ReplySegment": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "TEXT",
+                "FACT"
+              ],
+              "type": "string"
+            },
+            "text": {
+              "anyOf": [
+                {
+                  "maxLength": 700,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fact_index": {
+              "anyOf": [
+                {
+                  "maximum": 30,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/ReplySegment"
+          },
+          "maxItems": 12,
+          "minItems": 1,
+          "type": "array"
+        },
+        "addressed_tasks": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 8,
+          "type": "array"
+        },
+        "question_slot": {
+          "enum": [
+            "NONE",
+            "symptom"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "segments",
+        "addressed_tasks",
+        "question_slot"
+      ],
+      "type": "object"
+    }
+  }
+}

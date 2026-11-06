@@ -1,0 +1,13 @@
+{
+  "estate_id": "E002",
+  "documents": 4,
+  "evidence_chunks": 110,
+  "candidates": 7,
+  "approved_by_pipeline": 0,
+  "statuses": {
+    "国际健康生态谷业主手册.docx": "OCR_NEEDS_HUMAN_VERIFICATION",
+    "国际健康生态谷交付百问百答.docx": "TEXT_EXTRACTED",
+    "国际健康生态谷项目销售手册.docx": "TEXT_EXTRACTED_IMAGES_PENDING_REVIEW",
+    "国际生态谷销售说辞.docx": "TEXT_EXTRACTED"
+  }
+}

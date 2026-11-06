@@ -1,0 +1,33 @@
+{
+  "runtime_knowledge_set": "GOLDEN_QUESTIONS_100",
+  "provenance": "实际调用本包 AgentSession.chat 与 LangGraph 节点。使用临时模拟账号和业务存储。",
+  "provider_requests": 0,
+  "real_residents_or_production_orders": false,
+  "estate_id": "E001",
+  "user_message": "我要报修，水龙头滴水",
+  "deterministic_classification": null,
+  "planning_context_before_turn": null,
+  "conversation_graph_node_outputs": [],
+  "turn_graph_node_outputs": [],
+  "reply": {
+    "kind": "REPAIR_PREVIEW",
+    "text": "请核对下方房屋和故障描述，10分钟内点击按钮确认；当前尚未创建工单。",
+    "ticket": "[临时测试标识已隐藏]",
+    "data": {
+      "kind": "REPAIR_CONFIRMATION",
+      "unit_id": "E001:UNIT:MOCK-101",
+      "description": "我要报修，水龙头滴水",
+      "expires_in_seconds": 600,
+      "assistant_text": null,
+      "dialogue_details": {},
+      "dialogue_outcomes": [],
+      "knowledge_results": []
+    },
+    "trace": [
+      "guard",
+      "plan",
+      "prepare_repair"
+    ]
+  },
+  "work_orders_created": 0
+}
